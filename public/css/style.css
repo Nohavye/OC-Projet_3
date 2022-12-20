@@ -1,5 +1,40 @@
-.bloc-page {
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+body .bloc-page {
   width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+header img {
+  width: 150px;
+  height: auto;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 50px;
+  background-color: #e6e6e6;
+  box-shadow: inset 0 3px 3px 0 #b3b3b3;
+}
+form i {
+  color: #333333;
+}
+form input {
+  color: #333333;
+  font-size: 15px;
+  font-weight: 450;
+  border-style: none;
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
