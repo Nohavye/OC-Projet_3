@@ -1,0 +1,19 @@
+{
+  "name": "oc-projet_3",
+  "version": "1.0.0",
+  "description": "Intégration du site ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nohavye/OC-Projet_3.git"
+  },
+  "author": "Noha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nohavye/OC-Projet_3/issues"
+  },
+  "homepage": "https://github.com/Nohavye/OC-Projet_3#readme"
+}
