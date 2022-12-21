@@ -1,5 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
 }
 body .bloc-page {
   width: 100%;
@@ -35,10 +37,10 @@ header img {
   gap: 15px;
 }
 .bloc-location__icon {
-  color: #333333;
+  color: #4d4d4d;
 }
 .bloc-location__text {
-  color: #333333;
+  color: #4d4d4d;
   font-size: 16px;
   font-weight: 500;
 }
@@ -59,8 +61,6 @@ header img {
 }
 .bloc-catch__text {
   min-width: 100vw;
-  font-size: 18px;
-  font-weight: 300;
   text-align: center;
 }
 .bloc-catch__button {
@@ -68,8 +68,51 @@ header img {
   padding: 15px 25px;
   border-radius: 30px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  box-shadow: 0 5px 5px 0 #b3b3b3;
+  box-shadow: 0 8px 8px 0 #d6d6d6;
   color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.bloc-manual {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloc-manual__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.bloc-manual__button {
+  margin-left: 10px;
+  position: relative;
+  padding: 25px;
+  border-radius: 20px;
+  background-color: #F7F7F7;
+  box-shadow: 0 8px 8px 0 #d6d6d6;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.bloc-manual__button__index {
+  position: absolute;
+  left: -10px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #9356DC;
+  border-radius: 100%;
+  padding: 4px 7px 2px;
+}
+.bloc-manual__button__icon {
+  padding-left: 10px;
+  color: #4d4d4d;
+}
+.bloc-manual__button__text {
+  font-size: 16px;
   font-weight: 500;
 }
 
