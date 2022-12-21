@@ -1,9 +1,17 @@
 body {
-  margin: 0;
   font-family: "Roboto", sans-serif;
 }
 body .bloc-page {
   width: 100%;
+}
+
+* {
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 header {
@@ -32,7 +40,37 @@ header img {
 .bloc-location__text {
   color: #333333;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
+}
+
+.bloc-catch {
+  padding: 40px;
+  background-color: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.bloc-catch__title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.bloc-catch__text {
+  min-width: 100vw;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+.bloc-catch__button {
+  margin-top: 10px;
+  padding: 15px 25px;
+  border-radius: 30px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 0 5px 5px 0 #b3b3b3;
+  color: white;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
