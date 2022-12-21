@@ -16,7 +16,6 @@ body {
 }
 
 a {
-    color: black;
     text-decoration: none;
 }
 
@@ -181,4 +180,30 @@ header {
         }
     }
 
+}
+
+footer {
+    color: invert($text-color);
+    font-size: 15px;
+    font-weight: 400;
+    background-color: $background-color-terciary;
+    padding: 20px 20px 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    h1 {
+        margin-bottom: 10px;
+        font-family: Shrikhand;
+        font-size: large;
+    }
+
+    i {
+        margin-right: 10px;
+    }
+
+    a {
+        color: invert($text-color);
+    }
 }
