@@ -68,7 +68,7 @@ header img {
   padding: 15px 25px;
   border-radius: 30px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  box-shadow: 0 8px 8px 0 #d6d6d6;
+  box-shadow: 0 8px 8px #d6d6d6;
   color: white;
   font-size: 16px;
   font-weight: 500;
@@ -90,8 +90,7 @@ header img {
   padding: 25px;
   border-radius: 20px;
   background-color: #F7F7F7;
-  box-shadow: 0 8px 8px 0 #d6d6d6;
-  overflow: visible;
+  box-shadow: 0 8px 8px #d6d6d6;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -112,6 +111,7 @@ header img {
   color: #4d4d4d;
 }
 .bloc-manual__button__text {
+  color: #000000;
   font-size: 16px;
   font-weight: 500;
 }
