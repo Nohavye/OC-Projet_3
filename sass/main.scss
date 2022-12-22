@@ -47,7 +47,7 @@ header {
     }
 
     &__text {
-        @include button-text(lighten($text-color, 30%));
+        @include text-16-500(lighten($text-color, 30%));
     }
 }
 
@@ -70,14 +70,8 @@ header {
         text-align: center;
     }
 
-    &__button {
+    @include action-button {
         margin-top: 10px;
-        padding: 15px 25px;
-        border-radius: 30px;
-        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-        
-        @include button-shadow;
-        @include button-text(invert($text-color));
     }
 }
 
@@ -97,7 +91,7 @@ header {
         border-radius: 20px;
         background-color: $background-color-secondary;
         
-        @include button-shadow;
+        @include shadow-element;
 
         display: flex;
         align-items: center;
@@ -121,7 +115,7 @@ header {
         }
 
         &__text {
-            @include button-text;
+            @include text-16-500;
         }
         
     }
@@ -141,7 +135,7 @@ header {
         position: relative;
         padding-bottom: 20px;
         border-radius: 20px;
-        @include button-shadow;
+        @include shadow-element;
 
         &__img {
             top: -10px;
@@ -213,16 +207,9 @@ header {
             font-size: x-large;
         }
 
-        &__button {
+        @include action-button {
             width: max-content;
             margin: auto;
-            
-            padding: 15px 25px;
-            border-radius: 30px;
-            background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-            
-            @include button-shadow;
-            @include button-text(invert($text-color));
         }
     }
 }
@@ -242,7 +229,7 @@ header {
 
     &__product {
         background-color: $background-color-primary;
-        @include button-shadow;
+        @include shadow-element;
         margin-top: 15px;
         padding: 10px 20px 10px 10px;
         border-radius: 15px;

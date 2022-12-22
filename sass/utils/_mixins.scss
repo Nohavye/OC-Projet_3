@@ -1,8 +1,8 @@
-@mixin button-shadow {
+@mixin shadow-element {
     box-shadow: 0 8px 8px darken($background-color-primary, 16%);
 }
 
-@mixin button-text($color: $text-color) {
+@mixin text-16-500($color: $text-color) {
     color: $color;
     font-size: 16px;
     font-weight: 500;
@@ -12,6 +12,18 @@
     &__title {
         font-size: 24px;
         font-weight: 700;
+        @content
+    }
+}
+
+@mixin action-button {
+    &__button {
+        padding: 15px 25px;
+        border-radius: 30px;
+        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+            
+        @include shadow-element;
+        @include text-16-500(invert($text-color));
         @content
     }
 }
