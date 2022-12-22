@@ -208,14 +208,27 @@ header {
         flex-direction: column;
 
         &__title {
+            margin-bottom: 30px;
             font-family: Shrikhand;
             font-size: x-large;
+        }
+
+        &__button {
+            width: max-content;
+            margin: auto;
+            
+            padding: 15px 25px;
+            border-radius: 30px;
+            background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+            
+            @include button-shadow;
+            @include button-text(invert($text-color));
         }
     }
 }
 
 .bloc-menu-category {
-    margin: 30px 0 20px 0;
+    margin-bottom: 40px;
 
     &__title {
         text-transform: uppercase;
