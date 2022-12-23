@@ -174,17 +174,11 @@ header {
             }
         }
 
-        &__like {
-            position: absolute;
-            bottom: 30px;
-            right: 20px;
-            font-size: 28px;
-        }
+        @include icon-like(0, 20px, 30px, 0);
     }
-
 }
 
-main {
+.main-menu {
     div:first-child {
         background-repeat: no-repeat;
         background-position: 5% 0;
@@ -195,6 +189,7 @@ main {
 }
 
 .bloc-menu {
+    position: relative;
     background-color: $background-color-secondary;
     border-radius: 40px 40px 0 0;
     margin-top: 210px;
@@ -208,6 +203,8 @@ main {
         font-family: Shrikhand;
         font-size: x-large;
     }
+
+    @include icon-like(45px, 40px, 0, 0);
 
     &__category {
         margin-bottom: 40px;

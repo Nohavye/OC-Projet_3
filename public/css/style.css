@@ -165,12 +165,11 @@ header img {
 }
 .bloc-restaurants__card__like {
   position: absolute;
-  bottom: 30px;
   right: 20px;
-  font-size: 28px;
+  bottom: 30px;
 }
 
-main div:first-child {
+.main-menu div:first-child {
   background-repeat: no-repeat;
   background-position: 5% 0;
   background-size: 110%;
@@ -178,6 +177,7 @@ main div:first-child {
 }
 
 .bloc-menu {
+  position: relative;
   background-color: #F7F7F7;
   border-radius: 40px 40px 0 0;
   margin-top: 210px;
@@ -189,6 +189,11 @@ main div:first-child {
   margin-bottom: 30px;
   font-family: Shrikhand;
   font-size: x-large;
+}
+.bloc-menu__like {
+  position: absolute;
+  top: 45px;
+  right: 40px;
 }
 .bloc-menu__category {
   margin-bottom: 40px;
