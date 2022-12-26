@@ -16,11 +16,6 @@ a {
   text-decoration: none;
 }
 
-.fa-heart {
-  font-size: 28px;
-  color: #999999;
-}
-
 header {
   position: relative;
   display: flex;
@@ -179,6 +174,14 @@ header img {
   position: absolute;
   right: 20px;
   bottom: 30px;
+  font-size: 28px;
+  color: #999999;
+  transition: color 1s ease-out;
+}
+.bloc-restaurants__card__like:hover {
+  color: #FF79DA;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .bloc-menu {
@@ -207,6 +210,14 @@ header img {
   position: absolute;
   top: 45px;
   right: 40px;
+  font-size: 28px;
+  color: #999999;
+  transition: color 1s ease-out;
+}
+.bloc-menu-ahead__like:hover {
+  color: #FF79DA;
+  font-weight: bold;
+  cursor: pointer;
 }
 .bloc-menu-ahead__category {
   margin-bottom: 40px;

@@ -35,5 +35,15 @@
         @if ( $right != 0 ) { right: $right; }
         @if ( $bottom != 0 ) { bottom: $bottom; }
         @if ( $left != 0 ) { left: $left; }
+
+        font-size: 28px;
+        color: lighten($text-color, 60%);
+        transition: color 1s ease-out;
+    }
+
+    &__like:hover {
+        color: $color-secondary;
+        font-weight: bold;
+        cursor: pointer;
     }
 }
