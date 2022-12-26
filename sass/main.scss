@@ -20,6 +20,11 @@ a {
     text-decoration: none;
 }
 
+.fa-heart {
+    font-size: 28px;
+    color: lighten($text-color, 60%);
+}
+
 header {
     position: relative;
     display: flex;
@@ -204,7 +209,7 @@ header {
 
         background-color: $background-color-secondary;
         border-radius: 40px 40px 0 0;
-        padding: 40px 20px;
+        padding: 40px 20px 0 20px;
 
         &__title {
             margin-bottom: 30px;
@@ -261,8 +266,11 @@ header {
         }
 
         @include action-button {
-            width: max-content;
+            display: block;
             margin: auto;
+            width: 40%;
+            min-width: max-content;
+            text-align: center;
         }
     }
 }

@@ -16,6 +16,11 @@ a {
   text-decoration: none;
 }
 
+.fa-heart {
+  font-size: 28px;
+  color: #999999;
+}
+
 header {
   position: relative;
   display: flex;
@@ -191,7 +196,7 @@ header img {
   width: 100%;
   background-color: #F7F7F7;
   border-radius: 40px 40px 0 0;
-  padding: 40px 20px;
+  padding: 40px 20px 0 20px;
 }
 .bloc-menu-ahead__title {
   margin-bottom: 30px;
@@ -249,8 +254,11 @@ header img {
   color: white;
   font-size: 16px;
   font-weight: 500;
-  width: max-content;
+  display: block;
   margin: auto;
+  width: 40%;
+  min-width: max-content;
+  text-align: center;
 }
 
 footer {
