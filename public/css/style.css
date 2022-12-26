@@ -202,6 +202,7 @@ header img {
   padding: 40px 20px 0 20px;
 }
 .bloc-menu-ahead__title {
+  width: 75%;
   margin-bottom: 30px;
   font-family: Shrikhand;
   font-size: x-large;
@@ -231,11 +232,14 @@ header img {
   border-bottom: 3px solid #9EE2CE;
 }
 .bloc-menu-ahead__category__product {
+  position: relative;
   background-color: #FFFFFF;
   box-shadow: 0 8px 8px #d6d6d6;
   margin-top: 15px;
   padding: 10px 20px 10px 10px;
   border-radius: 15px;
+  transition: border 0.3s;
+  border-color: #9EE2CE;
 }
 .bloc-menu-ahead__category__product div {
   display: grid;
@@ -245,6 +249,9 @@ header img {
   margin-bottom: 5px;
   font-weight: 500;
   font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .bloc-menu-ahead__category__product__text {
   font-size: 15px;
@@ -256,6 +263,19 @@ header img {
   text-align: right;
   font-weight: 500;
   font-size: 15px;
+}
+.bloc-menu-ahead__category__product__check {
+  position: absolute;
+  top: 0;
+  right: -65px;
+  padding: 23px 23px;
+  color: transparent;
+}
+.bloc-menu-ahead__category__product__check:hover {
+  color: white;
+}
+.bloc-menu-ahead__category__product:hover {
+  border-right: 60px solid #9EE2CE;
 }
 .bloc-menu-ahead__button {
   padding: 15px 25px;

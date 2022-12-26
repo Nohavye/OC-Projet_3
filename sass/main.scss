@@ -207,6 +207,7 @@ header {
         padding: 40px 20px 0 20px;
 
         &__title {
+            width: 75%;
             margin-bottom: 30px;
             font-family: Shrikhand;
             font-size: x-large;
@@ -228,11 +229,15 @@ header {
             }
     
             &__product {
+                position: relative;
                 background-color: $background-color-primary;
                 @include shadow-element;
                 margin-top: 15px;
                 padding: 10px 20px 10px 10px;
                 border-radius: 15px;
+
+                transition: border 0.3s;
+                border-color: #9EE2CE;
     
                 div {
                     display: grid;
@@ -243,6 +248,10 @@ header {
                     margin-bottom: 5px;
                     font-weight: 500;
                     font-size: 18px;
+
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
     
                 &__text {
@@ -257,6 +266,22 @@ header {
                     font-weight: 500;
                     font-size: 15px;
                 }
+
+                &__check {
+                    position: absolute;
+                    top: 0;
+                    right: -65px;
+                    padding: 23px 23px;
+                    color: transparent;
+                }
+
+                &__check:hover {
+                    color: white;
+                }
+            }
+
+            &__product:hover {
+                border-right: 60px solid #9EE2CE;
             }
         }
 
