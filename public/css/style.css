@@ -67,7 +67,7 @@ header img {
   text-align: center;
 }
 .bloc-catch__text {
-  min-width: 100vw;
+  width: 90vw;
   text-align: center;
 }
 .bloc-catch__button {
@@ -176,7 +176,7 @@ header img {
   bottom: 30px;
   font-size: 28px;
   color: #999999;
-  transition: color 1s ease-out;
+  transition: color 0.5s;
 }
 .bloc-restaurants__card__like:hover {
   color: #FF79DA;
@@ -213,7 +213,7 @@ header img {
   right: 40px;
   font-size: 28px;
   color: #999999;
-  transition: color 1s ease-out;
+  transition: color 0.5s;
 }
 .bloc-menu-ahead__like:hover {
   color: #FF79DA;
@@ -266,16 +266,17 @@ header img {
 }
 .bloc-menu-ahead__category__product__check {
   position: absolute;
-  top: 0;
-  right: -65px;
-  padding: 23px 23px;
+  top: 25px;
+  right: 22px;
   color: transparent;
-}
-.bloc-menu-ahead__category__product__check:hover {
-  color: white;
+  transition: all 0.3s;
 }
 .bloc-menu-ahead__category__product:hover {
   border-right: 60px solid #9EE2CE;
+}
+.bloc-menu-ahead__category__product:hover > .bloc-menu-ahead__category__product__check {
+  color: white;
+  transform: translateX(60px);
 }
 .bloc-menu-ahead__button {
   padding: 15px 25px;

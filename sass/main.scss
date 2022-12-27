@@ -74,7 +74,7 @@ header {
     }
 
     &__text {
-        min-width: 100vw;
+        width: 90vw;
         text-align: center;
     }
 
@@ -269,19 +269,20 @@ header {
 
                 &__check {
                     position: absolute;
-                    top: 0;
-                    right: -65px;
-                    padding: 23px 23px;
+                    top: 25px;
+                    right: 22px;
                     color: transparent;
+                    transition: all 0.3s;
                 }
 
-                &__check:hover {
+                &:hover {
+                    border-right: 60px solid #9EE2CE;
+                }
+
+                &:hover > &__check {
                     color: white;
+                    transform: translateX(60px);
                 }
-            }
-
-            &__product:hover {
-                border-right: 60px solid #9EE2CE;
             }
         }
 
