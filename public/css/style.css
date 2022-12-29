@@ -321,4 +321,15 @@ footer a {
   text-align: center;
 }
 
+.loading-spinner__content {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  border: 1px solid red;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  color: black;
+}
+
 /*# sourceMappingURL=style.css.map */
