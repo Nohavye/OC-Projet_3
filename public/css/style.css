@@ -10,6 +10,12 @@ body {
 body .bloc-page {
   width: 100%;
 }
+@media screen and (min-width: 1024px) {
+  body .bloc-page {
+    width: 1024px;
+    margin: auto;
+  }
+}
 
 a {
   color: #000000;
