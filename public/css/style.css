@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -5,10 +9,6 @@ body {
 }
 body .bloc-page {
   width: 100%;
-}
-
-* {
-  margin: 0;
 }
 
 a {
@@ -32,6 +32,28 @@ header a {
 header img {
   width: 150px;
   height: auto;
+}
+
+footer {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #383838;
+  padding: 20px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer h1 {
+  margin-bottom: 10px;
+  font-family: Shrikhand;
+  font-size: large;
+}
+footer i {
+  margin-right: 10px;
+}
+footer a {
+  color: white;
 }
 
 .bloc-location {
@@ -291,28 +313,6 @@ header img {
   width: 40%;
   min-width: max-content;
   text-align: center;
-}
-
-footer {
-  color: white;
-  font-size: 15px;
-  font-weight: 400;
-  background-color: #383838;
-  padding: 20px 20px 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-footer h1 {
-  margin-bottom: 10px;
-  font-family: Shrikhand;
-  font-size: large;
-}
-footer i {
-  margin-right: 10px;
-}
-footer a {
-  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

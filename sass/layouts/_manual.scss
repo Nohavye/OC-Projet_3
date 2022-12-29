@@ -1,0 +1,45 @@
+.bloc-manual {
+    padding: 40px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include title-element;
+
+    &__button {
+        margin-left: 10px;
+        position: relative;
+        padding: 25px;
+        border-radius: 20px;
+        background-color: $background-color-secondary;
+        
+        @include shadow-element;
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &__index {
+            position: absolute;
+            left: -10px;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            background-color: $color-primary;
+            border-radius: 100%;
+            padding: 4px 7px 2px;
+        }
+
+        &__icon {
+            padding-left: 10px;
+            color: lighten($text-color, 30%);
+        }
+
+        &__text {
+            @include text-16-500;
+        }
+        
+    }
+}

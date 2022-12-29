@@ -1,0 +1,109 @@
+.bloc-menu {
+    background-color: $background-color-secondary;
+
+    &__image {
+        width: 100%;
+        height: 65vw;
+        object-fit: cover;
+    }
+    
+    &-ahead {
+        position: relative;
+        top: -40px;
+
+        box-sizing: border-box;
+        width: 100%;
+
+        background-color: $background-color-secondary;
+        border-radius: 40px 40px 0 0;
+        padding: 40px 20px 0 20px;
+
+        &__title {
+            width: 75%;
+            margin-bottom: 30px;
+            font-family: Shrikhand;
+            font-size: x-large;
+        }
+
+        @include icon-like(45px, 40px, 0, 0);
+
+        &__category {
+            margin-bottom: 40px;
+    
+            &__title {
+                text-transform: uppercase;
+                font-weight: 300;
+                font-size: 16px;
+            
+                width: 40px;
+                padding-bottom: 5px;
+                border-bottom: 3px solid #9EE2CE;
+            }
+    
+            &__product {
+                position: relative;
+                background-color: $background-color-primary;
+                @include shadow-element;
+                margin-top: 15px;
+                padding: 10px 20px 10px 10px;
+                border-radius: 15px;
+
+                transition: border 0.3s;
+                border-color: #9EE2CE;
+    
+                div {
+                    display: grid;
+                    grid: auto-flow / 85% 15%;
+                }
+    
+                &__title {
+                    margin-bottom: 5px;
+                    font-weight: 500;
+                    font-size: 18px;
+
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+    
+                &__text {
+                    font-size: 15px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+    
+                &__price {
+                    text-align: right;
+                    font-weight: 500;
+                    font-size: 15px;
+                }
+
+                &__check {
+                    position: absolute;
+                    top: 25px;
+                    right: 22px;
+                    color: transparent;
+                    transition: all 0.3s;
+                }
+
+                &:hover {
+                    border-right: 60px solid #9EE2CE;
+                }
+
+                &:hover > &__check {
+                    color: white;
+                    transform: translateX(60px);
+                }
+            }
+        }
+
+        @include action-button {
+            display: block;
+            margin: auto;
+            width: 40%;
+            min-width: max-content;
+            text-align: center;
+        }
+    }
+}

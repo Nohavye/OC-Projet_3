@@ -1,0 +1,56 @@
+.bloc-restaurants {
+    padding: 50px 20px;
+    background-color: $background-color-secondary;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include title-element;
+
+    &__card {
+        position: relative;
+        padding-bottom: 20px;
+        border-radius: 20px;
+        @include shadow-element;
+
+        &__img {
+            top: -10px;
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+        }
+
+        &__name {
+            margin: 10px 0 0 10px;
+            font-weight: 600;
+        }
+
+        &__place {
+            margin: 5px 0 0 10px;
+        }
+
+        &__new {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #3E9C7D;
+            width: max-content;
+            padding: 6px 12px;
+            border-radius: 3px;
+            background-color: #9EE2CE;
+            font-size: 14px;
+            font-weight: 500;
+            display: none;
+        }
+
+        &--new {
+            .bloc-restaurants__card__new {
+                display: unset;
+            }
+        }
+
+        @include icon-like(0, 20px, 30px, 0);
+    }
+}

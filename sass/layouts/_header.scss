@@ -1,0 +1,19 @@
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+
+    a {
+        position: absolute;
+        left: 20px;
+        font-size: larger;
+        color: lighten($text-color, 30%);
+    }
+
+    img {
+        width: 150px;
+        height: auto;
+    }
+}

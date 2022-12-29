@@ -1,0 +1,23 @@
+.bloc-catch {
+    padding: 40px;
+    background-color: $background-color-secondary;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    @include title-element {
+        text-align: center;
+    }
+
+    &__text {
+        width: 90vw;
+        text-align: center;
+    }
+
+    @include action-button {
+        margin-top: 10px;
+    }
+}
