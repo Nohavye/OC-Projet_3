@@ -10,7 +10,7 @@ body {
     .bloc-page {
         width: 100%;
 
-        @media screen and (min-width: map-get($breakpoints, tablet)) {
+        @include desktop-mode {
             width: 1024px;
             margin: auto;
         }

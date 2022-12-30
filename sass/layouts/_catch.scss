@@ -13,11 +13,17 @@
     }
 
     &__text {
-        width: 90vw;
+        //width: 90%;
         text-align: center;
     }
 
     @include action-button {
         margin-top: 10px;
+    }
+
+    @include desktop-mode {
+        order: 2;
+        width: 50%;
+        background-color: $background-color-primary;
     }
 }

@@ -7,6 +7,10 @@
 
     @include title-element;
 
+    @include desktop-mode {
+        width: 50%;
+    }
+
     &__button {
         margin-left: 10px;
         position: relative;

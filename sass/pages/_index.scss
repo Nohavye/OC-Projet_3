@@ -4,3 +4,12 @@
 @import "../layouts/catch";
 @import "../layouts/manual";
 @import "../layouts/restaurants";
+
+.bloc-presentation {
+    width: 100%;
+    
+    @include desktop-mode {
+        display: flex;
+        
+    }
+}

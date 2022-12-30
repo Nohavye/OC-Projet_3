@@ -47,3 +47,9 @@
         cursor: pointer;
     }
 }
+
+@mixin desktop-mode {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        @content
+    }
+}
