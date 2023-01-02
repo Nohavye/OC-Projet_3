@@ -11,7 +11,7 @@ body {
         width: 100%;
 
         @include desktop-mode {
-            width: 1024px;
+            max-width: 1280px;
             margin: auto;
         }
     }
