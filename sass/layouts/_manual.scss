@@ -7,6 +7,10 @@
 
     @include title-element;
 
+    @include tablet-only-mode {
+        padding: 40px 20vw;
+    }
+
     @include desktop-mode {
         width: 50%;
     }

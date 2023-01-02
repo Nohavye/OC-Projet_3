@@ -81,10 +81,33 @@ footer {
   flex-direction: column;
   gap: 8px;
 }
+@media screen and (min-width: 512px) {
+  footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  footer a:nth-child(2) {
+    order: 1;
+  }
+  footer a:nth-child(3) {
+    order: 3;
+  }
+  footer a:nth-child(4) {
+    order: 2;
+  }
+  footer a:nth-child(5) {
+    order: 4;
+  }
+}
 footer h1 {
   margin-bottom: 10px;
   font-family: Shrikhand;
   font-size: large;
+}
+@media screen and (min-width: 512px) {
+  footer h1 {
+    grid-column: 1/3;
+  }
 }
 footer i {
   margin-right: 10px;
@@ -156,6 +179,11 @@ footer a {
   font-size: 24px;
   font-weight: 700;
 }
+@media screen and (min-width: 512px) and (max-width: 1024px) {
+  .bloc-manual {
+    padding: 40px 20vw;
+  }
+}
 @media screen and (min-width: 1024px) {
   .bloc-manual {
     width: 50%;
@@ -200,9 +228,18 @@ footer a {
   flex-direction: column;
   gap: 20px;
 }
+@media screen and (min-width: 512px) {
+  .bloc-restaurants {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+}
 .bloc-restaurants__title {
   font-size: 24px;
   font-weight: 700;
+  grid-column: 1/3;
 }
 .bloc-restaurants__card {
   position: relative;
