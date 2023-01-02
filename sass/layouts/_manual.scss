@@ -28,6 +28,11 @@
         align-items: center;
         gap: 20px;
 
+        @include tablet-mode {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
         &__index {
             position: absolute;
             left: -10px;
