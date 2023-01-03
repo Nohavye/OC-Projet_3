@@ -170,6 +170,10 @@ footer a {
   font-size: 16px;
   font-weight: 500;
   margin-top: 10px;
+  transition: opacity 0.5s;
+}
+.bloc-catch__button:hover {
+  opacity: 0.8;
 }
 @media screen and (min-width: 1024px) {
   .bloc-catch {
@@ -469,11 +473,15 @@ footer a {
   width: 40%;
   min-width: max-content;
   text-align: center;
+  transition: opacity 0.5s;
 }
 @media screen and (min-width: 1024px) {
   .bloc-menu-ahead__button {
     grid-column: 2/3;
   }
+}
+.bloc-menu-ahead__button:hover {
+  opacity: 0.8;
 }
 
 .loading-spinner__content {

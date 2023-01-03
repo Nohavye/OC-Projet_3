@@ -12,7 +12,7 @@
     &__title {
         font-size: 24px;
         font-weight: 700;
-        @content
+        @content;
     }
 }
 
@@ -24,7 +24,13 @@
             
         @include shadow-element;
         @include text-16-500(invert($text-color));
-        @content
+        @content;
+
+        transition: opacity 0.5s;
+
+        &:hover {
+            opacity: 0.8;
+        }
     }
 }
 
@@ -57,18 +63,18 @@
 
 @mixin desktop-mode {
     @media screen and (min-width: map-get($breakpoints, tablet)) {
-        @content
+        @content;
     }
 }
 
 @mixin tablet-mode {
     @media screen and (min-width: map-get($breakpoints, mobile)) {
-        @content
+        @content;
     }
 }
 
 @mixin tablet-only-mode {
     @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablet)) {
-        @content
+        @content;
     }
 }
