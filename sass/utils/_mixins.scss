@@ -45,6 +45,8 @@
         font-size: 28px;
 
         background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+        
+        -webkit-background-clip: text;
         background-clip: text;
         
         $shadow-color: darken($background-color-secondary, 30%);

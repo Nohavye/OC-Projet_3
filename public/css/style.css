@@ -303,6 +303,7 @@ footer a {
   bottom: 30px;
   font-size: 28px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
   background-clip: text;
   text-shadow: -1px 0 #ababab, 0 1px #ababab, 1px 0 #ababab, 0 -1px #ababab;
   color: #F7F7F7;
@@ -370,6 +371,7 @@ footer a {
   right: 40px;
   font-size: 28px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
   background-clip: text;
   text-shadow: -1px 0 #ababab, 0 1px #ababab, 1px 0 #ababab, 0 -1px #ababab;
   color: #F7F7F7;
