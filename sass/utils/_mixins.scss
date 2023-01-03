@@ -37,14 +37,21 @@
         @if ( $left != 0 ) { left: $left; }
 
         font-size: 28px;
-        color: lighten($text-color, 60%);
-        transition: color 0.5s;
+
+        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+        background-clip: text;
+        
+        $shadow-color: darken($background-color-secondary, 30%);
+        text-shadow: -1px 0 $shadow-color, 0 1px $shadow-color, 1px 0 $shadow-color, 0 -1px $shadow-color;
+
+        color: $background-color-secondary;
+        transition: color 1s, text-shadow 0.1s;
     }
 
     &__like:hover {
-        color: $color-secondary;
-        font-weight: bold;
         cursor: pointer;
+        text-shadow: 0 0 transparent;
+        color: transparent;
     }
 }
 

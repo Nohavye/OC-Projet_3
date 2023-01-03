@@ -63,12 +63,9 @@
                 padding: 10px 20px 10px 10px;
                 border-radius: 15px;
 
-                transition: border 0.3s;
-                border-color: #9EE2CE;
-
-                @for $i from 2 through 12 {
+                @for $i from 2 through 7 {
                     &:nth-child(#{$i}) {
-                        animation-delay: 0.15s * $i;
+                        animation-delay: 0.15s * ($i - 1);
                     }
                 }
 
@@ -106,10 +103,14 @@
                 &__check {
                     position: absolute;
                     top: 25px;
-                    right: 22px;
+                    right: -38px;
                     color: transparent;
-                    transition: all 0.3s;
+                    opacity: 0;
+                    transition: transform 0.5s, opacity 0.5s;
                 }
+
+                transition: border-right 0.5s;
+                border-color: #9EE2CE;
 
                 &:hover {
                     border-right: 60px solid #9EE2CE;
@@ -117,7 +118,8 @@
 
                 &:hover > &__check {
                     color: white;
-                    transform: translateX(60px);
+                    opacity: 1;
+                    transform: rotate(-360deg);
                 }
             }
         }
