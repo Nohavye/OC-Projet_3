@@ -51,7 +51,7 @@ body {
 body .bloc-page {
   width: 100%;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   body .bloc-page {
     max-width: 1280px;
     margin: auto;
@@ -91,7 +91,7 @@ footer {
   flex-direction: column;
   gap: 8px;
 }
-@media screen and (min-width: 512px) {
+@media screen and (min-width: 513px) {
   footer {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -114,7 +114,7 @@ footer h1 {
   font-family: Shrikhand;
   font-size: large;
 }
-@media screen and (min-width: 512px) {
+@media screen and (min-width: 513px) {
   footer h1 {
     grid-column: 1/3;
   }
@@ -175,7 +175,7 @@ footer a {
 .bloc-catch__button:hover {
   opacity: 0.8;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .bloc-catch {
     order: 2;
     width: 50%;
@@ -193,12 +193,12 @@ footer a {
   font-size: 24px;
   font-weight: 700;
 }
-@media screen and (min-width: 512px) and (max-width: 1024px) {
+@media screen and (min-width: 513px) and (max-width: 1024px) {
   .bloc-manual {
     padding: 40px 20vw;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .bloc-manual {
     width: 50%;
   }
@@ -214,7 +214,7 @@ footer a {
   align-items: center;
   gap: 20px;
 }
-@media screen and (min-width: 512px) {
+@media screen and (min-width: 513px) {
   .bloc-manual__button {
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -248,7 +248,7 @@ footer a {
   flex-direction: column;
   gap: 20px;
 }
-@media screen and (min-width: 512px) {
+@media screen and (min-width: 513px) {
   .bloc-restaurants {
     display: grid;
     grid-template-columns: 48% 48%;
@@ -318,7 +318,7 @@ footer a {
 .bloc-presentation {
   width: 100%;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .bloc-presentation {
     display: flex;
   }
@@ -341,12 +341,12 @@ footer a {
   border-radius: 40px 40px 0 0;
   padding: 40px 20px 0 20px;
 }
-@media screen and (min-width: 512px) and (max-width: 1024px) {
+@media screen and (min-width: 513px) and (max-width: 1024px) {
   .bloc-menu-ahead {
     padding: 40px 20vw 0 20vw;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .bloc-menu-ahead {
     display: grid;
     grid-template-columns: 31% 31% 31%;
@@ -360,7 +360,7 @@ footer a {
   font-family: Shrikhand;
   font-size: x-large;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .bloc-menu-ahead__title {
     grid-column: 1/4;
   }
@@ -477,7 +477,7 @@ footer a {
   text-align: center;
   transition: opacity 0.5s;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .bloc-menu-ahead__button {
     grid-column: 2/3;
   }
@@ -529,7 +529,7 @@ footer a {
   animation-delay: 1s;
   color: #99E2D0;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .loading-spinner__content {
     max-width: 1280px;
   }
