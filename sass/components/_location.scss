@@ -12,16 +12,6 @@
     justify-content: center;
     gap: 15px;
 
-    // Elements
-    &__icon {
-
-        // Texts
-        color: lighten($text-color, 30%);
-    }
-
-    &__text {
-
-        // Texts
-        @include text-16-500(lighten($text-color, 30%));
-    }
+    // Texts
+    @include text-16-500(lighten($text-color, 30%));
 }

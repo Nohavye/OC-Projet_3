@@ -119,11 +119,6 @@ a {
   align-items: center;
   justify-content: center;
   gap: 15px;
-}
-.location__icon {
-  color: #4d4d4d;
-}
-.location__text {
   color: #4d4d4d;
   font-size: 16px;
   font-weight: 500;
@@ -238,7 +233,7 @@ a {
   font-weight: 500;
   display: none;
 }
-.restaurant-card--new .restaurants__card__new {
+.restaurant-card--new .restaurant-card__new {
   display: unset;
 }
 
