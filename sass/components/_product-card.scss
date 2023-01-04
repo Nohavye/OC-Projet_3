@@ -46,8 +46,8 @@
     &__price {
 
         // Texts
-        @include text-product-price;
         text-align: right;
+        @include text-product-price;
     }
 
     &__check {
