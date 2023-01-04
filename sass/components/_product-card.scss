@@ -80,7 +80,7 @@
         opacity: 1;
 
         // Color
-        color: white;
+        color: invert($text-color);
 
         // Transforms
         transform: rotate(-360deg);

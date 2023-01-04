@@ -100,7 +100,7 @@
         @include mobile-mode {
 
             // Elements
-            @include icon-like(45px, 40px, 0, 0);
+            @include icon-like(45px, 40px, 0, 0, $background-color-secondary);
         }
 
         @include tablet-only-mode {
@@ -109,7 +109,7 @@
             padding: 40px 16% 0 16%;
 
             // Elements
-            @include icon-like(45px, 18%, 0, 0);
+            @include icon-like(45px, 18%, 0, 0, $background-color-secondary);
         }
 
         @include desktop-mode {
@@ -121,7 +121,7 @@
             align-content: space-around;
 
             // Elements
-            @include icon-like(45px, 40px, 0, 0);
+            @include icon-like(45px, 40px, 0, 0, $background-color-secondary);
         }
     }
 }

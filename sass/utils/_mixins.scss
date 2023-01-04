@@ -33,7 +33,7 @@
     }
 }
 
-@mixin icon-like($top: 0, $right: 0, $bottom: 0, $left: 0) {
+@mixin icon-like($top: 0, $right: 0, $bottom: 0, $left: 0, $base-color: $background-color-primary) {
 
     // Elements
     &__like {
@@ -55,7 +55,7 @@
 
         // Texts
         font-size: 28px;
-        color: $background-color-secondary;
+        color: $base-color;
 
         // Animations
         transition: color 1s, text-shadow 0.1s;

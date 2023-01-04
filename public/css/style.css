@@ -68,7 +68,7 @@ a {
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-color: white;
+  background-color: #FFFFFF;
   z-index: 1;
   animation: spinner-desappear 0.5s;
   animation-fill-mode: both;
@@ -187,6 +187,7 @@ a {
   position: relative;
   padding-bottom: 20px;
   border-radius: 20px;
+  background-color: #FFFFFF;
   box-shadow: 0 8px 8px #d6d6d6;
   transition: box-shadow 0.5s;
 }
@@ -202,7 +203,7 @@ a {
   background-clip: text;
   text-shadow: -1px 0 #ababab, 0 1px #ababab, 1px 0 #ababab, 0 -1px #ababab;
   font-size: 28px;
-  color: #F7F7F7;
+  color: #FFFFFF;
   transition: color 1s, text-shadow 0.1s;
 }
 .restaurant-card__like:hover {
