@@ -11,6 +11,20 @@
     // Elements
     @include title-element;
 
+    &__button {
+
+        // Globals
+        margin-left: 10px;
+    
+        // Responsive
+        @include tablet-mode {
+    
+            // Display
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+    }
+
     // Responsive
     @include tablet-only-mode {
 
@@ -22,62 +36,5 @@
 
         // Globals
         width: 50%;
-    }
-}
-
-.manual__button {
-
-    // Globals
-    position: relative;
-    margin-left: 10px;
-    padding: 25px;
-    border-radius: 20px;
-    background-color: $background-color-secondary;
-    
-    @include shadow-element;
-
-    // Display
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-    // Elements
-    &__index {
-
-        // Globals
-        position: absolute;
-        left: -10px;
-        padding: 4px 7px 2px;
-        border-radius: 100%;
-        background-color: $color-primary;
-
-        // Texts
-        color: white;
-        font-size: 14px;
-        font-weight: 500;
-        text-align: center;
-    }
-
-    &__icon {
-
-        // Globals
-        padding-left: 10px;
-
-        // Texts
-        color: lighten($text-color, 30%);
-    }
-
-    &__text {
-
-        // Texts
-        @include text-16-500;
-    }
-
-    // Responsive
-    @include tablet-mode {
-
-        // Display
-        flex-direction: row-reverse;
-        justify-content: space-between;
     }
 }

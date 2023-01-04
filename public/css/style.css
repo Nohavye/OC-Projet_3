@@ -82,6 +82,41 @@ a {
   opacity: 0.8;
 }
 
+.manual-button {
+  position: relative;
+  padding: 25px;
+  border-radius: 20px;
+  background-color: #F7F7F7;
+  box-shadow: 0 8px 8px #d6d6d6;
+  transition: box-shadow 0.5s;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.manual-button:hover {
+  box-shadow: 0 12px 12px #bdbdbd;
+}
+.manual-button__index {
+  position: absolute;
+  left: -10px;
+  padding: 4px 7px 2px;
+  border-radius: 100%;
+  background-color: #9356DC;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+.manual-button__icon {
+  padding-left: 10px;
+  color: #4d4d4d;
+}
+.manual-button__text {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .location {
   height: 50px;
   background-color: #e6e6e6;
@@ -204,6 +239,15 @@ header a {
   font-size: 24px;
   font-weight: 700;
 }
+.manual__button {
+  margin-left: 10px;
+}
+@media screen and (min-width: 513px) {
+  .manual__button {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
 @media screen and (min-width: 513px) and (max-width: 1024px) {
   .manual {
     padding: 40px 16%;
@@ -212,48 +256,6 @@ header a {
 @media screen and (min-width: 1025px) {
   .manual {
     width: 50%;
-  }
-}
-
-.manual__button {
-  position: relative;
-  margin-left: 10px;
-  padding: 25px;
-  border-radius: 20px;
-  background-color: #F7F7F7;
-  box-shadow: 0 8px 8px #d6d6d6;
-  transition: box-shadow 0.5s;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.manual__button:hover {
-  box-shadow: 0 12px 12px #bdbdbd;
-}
-.manual__button__index {
-  position: absolute;
-  left: -10px;
-  padding: 4px 7px 2px;
-  border-radius: 100%;
-  background-color: #9356DC;
-  color: white;
-  font-size: 14px;
-  font-weight: 500;
-  text-align: center;
-}
-.manual__button__icon {
-  padding-left: 10px;
-  color: #4d4d4d;
-}
-.manual__button__text {
-  color: #000000;
-  font-size: 16px;
-  font-weight: 500;
-}
-@media screen and (min-width: 513px) {
-  .manual__button {
-    flex-direction: row-reverse;
-    justify-content: space-between;
   }
 }
 
