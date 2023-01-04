@@ -26,8 +26,7 @@
         margin-bottom: 5px;
 
         // Texts
-        font-weight: 500;
-        font-size: 18px;
+        @include text-product-title;
 
         white-space: nowrap;
         overflow: hidden;

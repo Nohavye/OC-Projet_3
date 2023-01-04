@@ -9,7 +9,11 @@
     gap: 20px;
 
     // Elements
-    @include title-element;
+    &__title {
+
+        // Texts
+        @include text-section-title;
+    }
 
     &__button {
 

@@ -9,7 +9,7 @@
 
     // Texts
     text-align: center;
-    @include text-16-500(invert($text-color));
+    @include text-button(invert($text-color));
 
     // Animations
     transition: opacity 0.5s, box-shadow 0.5s;

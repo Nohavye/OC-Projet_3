@@ -10,7 +10,10 @@
     gap: 20px;
 
     // Elements
-    @include title-element {
+    &__title {
+
+        // Texts
+        @include text-section-title;
 
         // Display
         grid-column: 1 / 3;

@@ -12,27 +12,6 @@
     }
 }
 
-@mixin text-16-500($color: $text-color) {
-
-    // Texts
-    color: $color;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-@mixin title-element {
-
-    // Elements
-    &__title {
-
-        // Texts
-        font-size: 24px;
-        font-weight: 700;
-
-        @content;
-    }
-}
-
 @mixin icon-like($top: 0, $right: 0, $bottom: 0, $left: 0, $base-color: $background-color-primary) {
 
     // Elements
@@ -69,6 +48,47 @@
     }
 }
 
+// Texts mixins
+@mixin text-base {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+@mixin text-label($color: $text-color) {
+    color: $color;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@mixin text-button($color: $text-color) {
+    color: $color;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@mixin text-section-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@mixin text-retaurant-card-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@mixin text-category-title {
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+@mixin text-product-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+// Responsive mixins
 @mixin desktop-mode {
     @media screen and (min-width: (map-get($breakpoints, tablet)+1px)) {
         @content;

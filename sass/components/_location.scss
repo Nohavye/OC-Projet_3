@@ -13,5 +13,5 @@
     gap: 15px;
 
     // Texts
-    @include text-16-500(lighten($text-color, 30%));
+    @include text-button(lighten($text-color, 30%));
 }

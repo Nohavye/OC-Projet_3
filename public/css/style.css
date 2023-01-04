@@ -163,10 +163,10 @@ a {
   padding: 4px 7px 2px;
   border-radius: 100%;
   background-color: #9356DC;
+  text-align: center;
   color: white;
   font-size: 14px;
   font-weight: 500;
-  text-align: center;
 }
 .manual-button__icon {
   padding-left: 10px;
@@ -215,6 +215,7 @@ a {
 }
 .restaurant-card__name {
   margin: 10px 0 0 10px;
+  font-size: 18px;
   font-weight: 600;
 }
 .restaurant-card__place {
@@ -228,7 +229,7 @@ a {
   padding: 6px 12px;
   border-radius: 3px;
   background-color: #9EE2CE;
-  color: #3E9C7D;
+  color: #278870;
   font-size: 14px;
   font-weight: 500;
   display: none;
@@ -256,8 +257,8 @@ a {
 }
 .product-card__title {
   margin-bottom: 5px;
-  font-weight: 500;
   font-size: 18px;
+  font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -318,9 +319,9 @@ header a {
   gap: 15px;
 }
 .catch__title {
+  text-align: center;
   font-size: 24px;
   font-weight: 700;
-  text-align: center;
 }
 .catch__text {
   text-align: center;
@@ -422,9 +423,9 @@ header a {
   width: 40px;
   padding-bottom: 5px;
   border-bottom: 3px solid #9EE2CE;
-  text-transform: uppercase;
-  font-weight: 300;
   font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 .menu-ahead__category__product {
   margin-top: 15px;

@@ -12,10 +12,11 @@
     gap: 15px;
 
     // Elements
-    @include title-element {
+    &__title {
 
         // Texts
         text-align: center;
+        @include text-section-title;
     }
 
     &__text {

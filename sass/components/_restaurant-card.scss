@@ -29,7 +29,7 @@
         margin: 10px 0 0 10px;
 
         // Texts
-        font-weight: 600;
+        @include text-retaurant-card-title;
     }
 
     &__place {
@@ -50,9 +50,7 @@
         background-color: #9EE2CE;
 
         // Texts
-        color: #3E9C7D;
-        font-size: 14px;
-        font-weight: 500;
+        @include text-label(darken($color-terciary, 40%));
 
         // Display
         display: none;

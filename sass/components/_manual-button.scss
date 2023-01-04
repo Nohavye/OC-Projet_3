@@ -24,10 +24,8 @@
         background-color: $color-primary;
 
         // Texts
-        color: invert($text-color);
-        font-size: 14px;
-        font-weight: 500;
         text-align: center;
+        @include text-label(invert($text-color));
     }
 
     &__icon {
@@ -42,6 +40,6 @@
     &__text {
 
         // Texts
-        @include text-16-500;
+        @include text-button;
     }
 }
