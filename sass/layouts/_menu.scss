@@ -1,6 +1,9 @@
-.bloc-menu {
+.menu {
+
+    // Globals
     background-color: $background-color-secondary;
 
+    // Elements
     &__image {
         width: 100%;
         height: 250px;

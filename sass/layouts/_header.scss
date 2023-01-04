@@ -1,19 +1,24 @@
 header {
+
+    // Globals
     position: relative;
+    height: 60px;
+
+    // Display
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
-
+    
+    // Elements
+    img {
+        width: 150px;
+        height: auto;
+    }
+    
     a {
         position: absolute;
         left: 20px;
         font-size: larger;
         color: lighten($text-color, 30%);
-    }
-
-    img {
-        width: 150px;
-        height: auto;
     }
 }

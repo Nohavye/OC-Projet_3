@@ -1,13 +1,17 @@
 .catch {
+
+    // Globals
     padding: 40px;
     background-color: $background-color-secondary;
 
+    // Display
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 15px;
 
+    // Elements
     @include title-element {
         text-align: center;
     }
@@ -21,6 +25,7 @@
         margin-top: 10px;
     }
 
+    // Responsive
     @include desktop-mode {
         order: 2;
         width: 50%;

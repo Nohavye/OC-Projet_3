@@ -65,10 +65,14 @@ a {
 
 header {
   position: relative;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px;
+}
+header img {
+  width: 150px;
+  height: auto;
 }
 header a {
   position: absolute;
@@ -76,20 +80,32 @@ header a {
   font-size: larger;
   color: #4d4d4d;
 }
-header img {
-  width: 150px;
-  height: auto;
-}
 
 footer {
+  background-color: #383838;
+  padding: 20px 20px 40px;
   color: white;
   font-size: 15px;
   font-weight: 400;
-  background-color: #383838;
-  padding: 20px 20px 40px;
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+footer h1 {
+  margin-bottom: 10px;
+  font-family: Shrikhand;
+  font-size: large;
+}
+@media screen and (min-width: 513px) {
+  footer h1 {
+    grid-column: 1/3;
+  }
+}
+footer i {
+  margin-right: 10px;
+}
+footer a {
+  color: white;
 }
 @media screen and (min-width: 513px) {
   footer {
@@ -108,22 +124,6 @@ footer {
   footer a:nth-child(5) {
     order: 4;
   }
-}
-footer h1 {
-  margin-bottom: 10px;
-  font-family: Shrikhand;
-  font-size: large;
-}
-@media screen and (min-width: 513px) {
-  footer h1 {
-    grid-column: 1/3;
-  }
-}
-footer i {
-  margin-right: 10px;
-}
-footer a {
-  color: white;
 }
 
 .loading-spinner__content {
@@ -246,16 +246,6 @@ footer a {
   font-size: 24px;
   font-weight: 700;
 }
-@media screen and (min-width: 513px) and (max-width: 1024px) {
-  .manual {
-    padding: 40px 20vw;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .manual {
-    width: 50%;
-  }
-}
 .manual__button {
   margin-left: 10px;
   position: relative;
@@ -297,6 +287,16 @@ footer a {
   font-size: 16px;
   font-weight: 500;
 }
+@media screen and (min-width: 513px) and (max-width: 1024px) {
+  .manual {
+    padding: 40px 16%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .manual {
+    width: 50%;
+  }
+}
 
 .restaurants {
   padding: 50px 20px;
@@ -304,14 +304,6 @@ footer a {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-@media screen and (min-width: 513px) {
-  .restaurants {
-    display: grid;
-    grid-template-columns: 48% 48%;
-    justify-content: space-around;
-    align-content: space-around;
-  }
 }
 .restaurants__title {
   font-size: 24px;
@@ -375,6 +367,14 @@ footer a {
   text-shadow: 0 0 transparent;
   color: transparent;
 }
+@media screen and (min-width: 513px) {
+  .restaurants {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+}
 
 .presentation {
   width: 100%;
@@ -385,15 +385,15 @@ footer a {
   }
 }
 
-.bloc-menu {
+.menu {
   background-color: #F7F7F7;
 }
-.bloc-menu__image {
+.menu__image {
   width: 100%;
   height: 250px;
   object-fit: cover;
 }
-.bloc-menu-ahead {
+.menu-ahead {
   position: relative;
   top: -40px;
   box-sizing: border-box;
@@ -403,7 +403,7 @@ footer a {
   padding: 40px 20px 0 20px;
 }
 @media screen and (max-width: 512px) {
-  .bloc-menu-ahead__like {
+  .menu-ahead__like {
     position: absolute;
     top: 45px;
     right: 40px;
@@ -415,17 +415,17 @@ footer a {
     color: #F7F7F7;
     transition: color 1s, text-shadow 0.1s;
   }
-  .bloc-menu-ahead__like:hover {
+  .menu-ahead__like:hover {
     cursor: pointer;
     text-shadow: 0 0 transparent;
     color: transparent;
   }
 }
 @media screen and (min-width: 513px) and (max-width: 1024px) {
-  .bloc-menu-ahead {
+  .menu-ahead {
     padding: 40px 16% 0 16%;
   }
-  .bloc-menu-ahead__like {
+  .menu-ahead__like {
     position: absolute;
     top: 45px;
     right: 18%;
@@ -437,20 +437,20 @@ footer a {
     color: #F7F7F7;
     transition: color 1s, text-shadow 0.1s;
   }
-  .bloc-menu-ahead__like:hover {
+  .menu-ahead__like:hover {
     cursor: pointer;
     text-shadow: 0 0 transparent;
     color: transparent;
   }
 }
 @media screen and (min-width: 1025px) {
-  .bloc-menu-ahead {
+  .menu-ahead {
     display: grid;
     grid-template-columns: 31% 31% 31%;
     justify-content: space-around;
     align-content: space-around;
   }
-  .bloc-menu-ahead__like {
+  .menu-ahead__like {
     position: absolute;
     top: 45px;
     right: 40px;
@@ -462,27 +462,27 @@ footer a {
     color: #F7F7F7;
     transition: color 1s, text-shadow 0.1s;
   }
-  .bloc-menu-ahead__like:hover {
+  .menu-ahead__like:hover {
     cursor: pointer;
     text-shadow: 0 0 transparent;
     color: transparent;
   }
 }
-.bloc-menu-ahead__title {
+.menu-ahead__title {
   width: 75%;
   margin-bottom: 30px;
   font-family: Shrikhand;
   font-size: x-large;
 }
 @media screen and (min-width: 1025px) {
-  .bloc-menu-ahead__title {
+  .menu-ahead__title {
     grid-column: 1/4;
   }
 }
-.bloc-menu-ahead__category {
+.menu-ahead__category {
   margin-bottom: 40px;
 }
-.bloc-menu-ahead__category__title {
+.menu-ahead__category__title {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 16px;
@@ -490,7 +490,7 @@ footer a {
   padding-bottom: 5px;
   border-bottom: 3px solid #9EE2CE;
 }
-.bloc-menu-ahead__category__product {
+.menu-ahead__category__product {
   position: relative;
   background-color: #FFFFFF;
   box-shadow: 0 8px 8px #d6d6d6;
@@ -503,32 +503,32 @@ footer a {
   transition: border-right 0.5s, box-shadow 0.5s;
   border-color: #9EE2CE;
 }
-.bloc-menu-ahead__category__product:hover {
+.menu-ahead__category__product:hover {
   box-shadow: 0 12px 12px #bdbdbd;
 }
-.bloc-menu-ahead__category__product:nth-child(2) {
+.menu-ahead__category__product:nth-child(2) {
   animation-delay: 0.15s;
 }
-.bloc-menu-ahead__category__product:nth-child(3) {
+.menu-ahead__category__product:nth-child(3) {
   animation-delay: 0.3s;
 }
-.bloc-menu-ahead__category__product:nth-child(4) {
+.menu-ahead__category__product:nth-child(4) {
   animation-delay: 0.45s;
 }
-.bloc-menu-ahead__category__product:nth-child(5) {
+.menu-ahead__category__product:nth-child(5) {
   animation-delay: 0.6s;
 }
-.bloc-menu-ahead__category__product:nth-child(6) {
+.menu-ahead__category__product:nth-child(6) {
   animation-delay: 0.75s;
 }
-.bloc-menu-ahead__category__product:nth-child(7) {
+.menu-ahead__category__product:nth-child(7) {
   animation-delay: 0.9s;
 }
-.bloc-menu-ahead__category__product div {
+.menu-ahead__category__product div {
   display: grid;
   grid: auto-flow/85% 15%;
 }
-.bloc-menu-ahead__category__product__title {
+.menu-ahead__category__product__title {
   margin-bottom: 5px;
   font-weight: 500;
   font-size: 18px;
@@ -536,18 +536,18 @@ footer a {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.bloc-menu-ahead__category__product__text {
+.menu-ahead__category__product__text {
   font-size: 15px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.bloc-menu-ahead__category__product__price {
+.menu-ahead__category__product__price {
   text-align: right;
   font-weight: 500;
   font-size: 15px;
 }
-.bloc-menu-ahead__category__product__check {
+.menu-ahead__category__product__check {
   position: absolute;
   top: 25px;
   right: -38px;
@@ -555,15 +555,15 @@ footer a {
   opacity: 0;
   transition: transform 0.5s, opacity 0.5s;
 }
-.bloc-menu-ahead__category__product:hover {
+.menu-ahead__category__product:hover {
   border-right: 60px solid #9EE2CE;
 }
-.bloc-menu-ahead__category__product:hover > .bloc-menu-ahead__category__product__check {
+.menu-ahead__category__product:hover > .menu-ahead__category__product__check {
   color: white;
   opacity: 1;
   transform: rotate(-360deg);
 }
-.bloc-menu-ahead__button {
+.menu-ahead__button {
   padding: 15px 25px;
   border-radius: 30px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -579,15 +579,15 @@ footer a {
   text-align: center;
   transition: opacity 0.5s, box-shadow 0.5s;
 }
-.bloc-menu-ahead__button:hover {
+.menu-ahead__button:hover {
   box-shadow: 0 12px 12px #bdbdbd;
 }
 @media screen and (min-width: 1025px) {
-  .bloc-menu-ahead__button {
+  .menu-ahead__button {
     grid-column: 2/3;
   }
 }
-.bloc-menu-ahead__button:hover {
+.menu-ahead__button:hover {
   opacity: 0.8;
 }
 

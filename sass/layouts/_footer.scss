@@ -1,14 +1,39 @@
 footer {
-    color: invert($text-color);
-    font-size: 15px;
-    font-weight: 400;
+
+    // Globals
     background-color: $background-color-terciary;
     padding: 20px 20px 40px;
 
+    // Texts
+    color: invert($text-color);
+    font-size: 15px;
+    font-weight: 400;
+
+    //Display
     display: flex;
     flex-direction: column;
     gap: 8px;
 
+    // Elements
+    h1 {
+        margin-bottom: 10px;
+        font-family: Shrikhand;
+        font-size: large;
+
+        @include tablet-mode {
+            grid-column: 1 / 3;
+        }
+    }
+
+    i {
+        margin-right: 10px;
+    }
+
+    a {
+        color: invert($text-color);
+    }
+
+    // Responsive
     @include tablet-mode {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -28,23 +53,5 @@ footer {
         a:nth-child(5) {
             order: 4;
         }
-    }
-
-    h1 {
-        margin-bottom: 10px;
-        font-family: Shrikhand;
-        font-size: large;
-
-        @include tablet-mode {
-            grid-column: 1 / 3;
-        }
-    }
-
-    i {
-        margin-right: 10px;
-    }
-
-    a {
-        color: invert($text-color);
     }
 }

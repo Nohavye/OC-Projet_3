@@ -1,19 +1,15 @@
 .manual {
+
+    // Globals
     padding: 40px 20px;
 
+    // Display
     display: flex;
     flex-direction: column;
     gap: 20px;
 
+    // Elements
     @include title-element;
-
-    @include tablet-only-mode {
-        padding: 40px 20vw;
-    }
-
-    @include desktop-mode {
-        width: 50%;
-    }
 
     &__button {
         margin-left: 10px;
@@ -52,7 +48,15 @@
 
         &__text {
             @include text-16-500;
-        }
-        
+        }  
+    }
+
+    // Responsive
+    @include tablet-only-mode {
+        padding: 40px 16%;
+    }
+
+    @include desktop-mode {
+        width: 50%;
     }
 }
