@@ -1,57 +1,89 @@
 .loading-spinner {
 
     &__content {
+
+        // Globals
         position: fixed;
         top: 0;
-        z-index: 1;
-        background-color: white;
         width: 100vw;
         height: 100vh;
-        color: black;
+        background-color: white;
+        z-index: 1;
         
+        // Animation
         animation: spinner-desappear 0.5s;
-        animation-delay: 3s;
         animation-fill-mode: both;
+        animation-delay: 3s;
 
+        // Elements
         &__text {
+
+            // Globals
             position: relative;
             top: 45%;
             width: 230px;
             height: 60px;
             margin: auto;
+
+            // Texts
             font-family: Shrikhand;
             font-size: 42px;
 
+            // Elements
             &__item {
+
+                // Globals
                 position: absolute;
                 width: fit-content;
                 
+                // Animation
                 animation: spinner-text-appear 3s infinite;
-                animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
                 animation-fill-mode: both;
+                animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
                 
-
+                // Elements
                 &--oh {
+
+                    // Globals
                     left: 0;
-                    animation-delay: 0.33s;
+
+                    // Texts
                     color: $color-primary;
+
+                    // Animation
+                    animation-delay: 0.33s;
                 }
     
                 &--my {
+
+                    // Globals
                     left: 56px;
-                    animation-delay: 0.66s;
+
+                    // Texts
                     color: $color-secondary;
+
+                    // Animation
+                    animation-delay: 0.66s;
                 }
     
                 &--food {
+
+                    // Globals
                     left: 126px;
-                    animation-delay: 1s;
+
+                    // Texts
                     color: $color-terciary;
+
+                    // Animation
+                    animation-delay: 1s;
                 }
             }
         }
 
+        // Responsive
         @include desktop-mode {
+
+            // Globals
             max-width: 1280px;
         }
     }

@@ -1,23 +1,36 @@
 * {
+
+    // Reset all margins
     margin: 0;
 }
 
 body {
+
+    // Texts
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 300;
 
+    // Elements
     .bloc-page {
+
+        // Globals
         width: 100%;
 
+        // Responsive
         @include desktop-mode {
+
+            // Globals
             max-width: 1280px;
             margin: auto;
         }
     }
 }
 
+// Hyperlinks
 a {
+
+    // Texts
     color: $text-color;
     text-decoration: none;
 }

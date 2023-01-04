@@ -1,37 +1,59 @@
 @mixin shadow-element {
+
+    // Globals
     box-shadow: 0 8px 8px darken($background-color-primary, 16%);
+
+    // Animation
     transition: box-shadow 0.5s;
+
+    // Actions
     &:hover {
         box-shadow: 0 12px 12px darken($background-color-primary, 26%);
     }
 }
 
 @mixin text-16-500($color: $text-color) {
+
+    // Texts
     color: $color;
     font-size: 16px;
     font-weight: 500;
 }
 
 @mixin title-element {
+
+    // Elements
     &__title {
+
+        // Texts
         font-size: 24px;
         font-weight: 700;
+
         @content;
     }
 }
 
 @mixin action-button {
+
+    // Elements
     &__button {
+
+        //Globals
         padding: 15px 25px;
         border-radius: 30px;
         background: linear-gradient(to bottom right, $color-secondary, $color-primary);
             
         @include shadow-element;
+
+        // Texts
         @include text-16-500(invert($text-color));
+
         @content;
 
+        // Animations
         transition: opacity 0.5s, box-shadow 0.5s;
 
+        // Actions
         &:hover {
             opacity: 0.8;
         }
@@ -39,31 +61,38 @@
 }
 
 @mixin icon-like($top: 0, $right: 0, $bottom: 0, $left: 0) {
+
+    // Elements
     &__like {
+
+        // Globlas
         position: absolute;
+
         @if ( $top != 0 ) { top: $top; }
         @if ( $right != 0 ) { right: $right; }
         @if ( $bottom != 0 ) { bottom: $bottom; }
         @if ( $left != 0 ) { left: $left; }
 
-        font-size: 28px;
-
         background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-        
         -webkit-background-clip: text;
         background-clip: text;
-        
+
         $shadow-color: darken($background-color-secondary, 30%);
         text-shadow: -1px 0 $shadow-color, 0 1px $shadow-color, 1px 0 $shadow-color, 0 -1px $shadow-color;
 
+        // Texts
+        font-size: 28px;
         color: $background-color-secondary;
-        transition: color 1s, text-shadow 0.1s;
-    }
 
-    &__like:hover {
-        cursor: pointer;
-        text-shadow: 0 0 transparent;
-        color: transparent;
+        // Animations
+        transition: color 1s, text-shadow 0.1s;
+
+        // Actions
+        &:hover {
+            cursor: pointer;
+            text-shadow: 0 0 transparent;
+            color: transparent;
+        }
     }
 }
 

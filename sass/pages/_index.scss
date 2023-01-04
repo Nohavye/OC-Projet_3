@@ -8,10 +8,14 @@
 @import "../layouts/restaurants";
 
 .presentation {
+
+    // Globals
     width: 100%;
     
+    // Responsive
     @include desktop-mode {
+
+        // Display
         display: flex;
-        
     }
 }

@@ -1,18 +1,27 @@
 .location {
+
+    // Globals
     height: 50px;
     background-color: darken($background-color-primary, 10%);
+
     box-shadow: inset 0 3px 3px 0 darken($background-color-primary, 30%);
 
+    // Display
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
 
+    // Elements
     &__icon {
+
+        // Texts
         color: lighten($text-color, 30%);
     }
 
     &__text {
+
+        // Texts
         @include text-16-500(lighten($text-color, 30%));
     }
 }
