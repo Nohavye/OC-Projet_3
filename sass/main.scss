@@ -7,10 +7,11 @@
 @import "./base/base";
 
 // Components
+@import "./components/spinner";
+@import "./components/location";
 @import "./components/action-button";
 @import "./components/manual-button";
-@import "./components/location";
-@import "./components/spinner";
+@import "./components/restaurant-card";
 
 // Layouts
 @import "./layouts/header";

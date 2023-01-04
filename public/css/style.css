@@ -63,6 +63,72 @@ a {
   text-decoration: none;
 }
 
+.loading-spinner__content {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 1;
+  animation: spinner-desappear 0.5s;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
+.loading-spinner__content__text {
+  position: relative;
+  top: 45%;
+  width: 230px;
+  height: 60px;
+  margin: auto;
+  font-family: Shrikhand;
+  font-size: 42px;
+}
+.loading-spinner__content__text__item {
+  position: absolute;
+  width: fit-content;
+  animation: spinner-text-appear 3s infinite;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.loading-spinner__content__text__item--oh {
+  left: 0;
+  color: #9356DC;
+  animation-delay: 0.33s;
+}
+.loading-spinner__content__text__item--my {
+  left: 56px;
+  color: #FF79DA;
+  animation-delay: 0.66s;
+}
+.loading-spinner__content__text__item--food {
+  left: 126px;
+  color: #99E2D0;
+  animation-delay: 1s;
+}
+@media screen and (min-width: 1025px) {
+  .loading-spinner__content {
+    max-width: 1280px;
+  }
+}
+
+.location {
+  height: 50px;
+  background-color: #e6e6e6;
+  box-shadow: inset 0 3px 3px 0 #b3b3b3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.location__icon {
+  color: #4d4d4d;
+}
+.location__text {
+  color: #4d4d4d;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .action-button {
   padding: 15px 25px;
   border-radius: 30px;
@@ -117,70 +183,62 @@ a {
   font-weight: 500;
 }
 
-.location {
-  height: 50px;
-  background-color: #e6e6e6;
-  box-shadow: inset 0 3px 3px 0 #b3b3b3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-.location__icon {
-  color: #4d4d4d;
-}
-.location__text {
-  color: #4d4d4d;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.loading-spinner__content {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-  z-index: 1;
-  animation: spinner-desappear 0.5s;
-  animation-fill-mode: both;
-  animation-delay: 3s;
-}
-.loading-spinner__content__text {
+.restaurant-card {
   position: relative;
-  top: 45%;
-  width: 230px;
-  height: 60px;
-  margin: auto;
-  font-family: Shrikhand;
-  font-size: 42px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 8px #d6d6d6;
+  transition: box-shadow 0.5s;
 }
-.loading-spinner__content__text__item {
+.restaurant-card:hover {
+  box-shadow: 0 12px 12px #bdbdbd;
+}
+.restaurant-card__like {
   position: absolute;
-  width: fit-content;
-  animation: spinner-text-appear 3s infinite;
-  animation-fill-mode: both;
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  right: 20px;
+  bottom: 30px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: -1px 0 #ababab, 0 1px #ababab, 1px 0 #ababab, 0 -1px #ababab;
+  font-size: 28px;
+  color: #F7F7F7;
+  transition: color 1s, text-shadow 0.1s;
 }
-.loading-spinner__content__text__item--oh {
-  left: 0;
-  color: #9356DC;
-  animation-delay: 0.33s;
+.restaurant-card__like:hover {
+  cursor: pointer;
+  text-shadow: 0 0 transparent;
+  color: transparent;
 }
-.loading-spinner__content__text__item--my {
-  left: 56px;
-  color: #FF79DA;
-  animation-delay: 0.66s;
+.restaurant-card__img {
+  top: -10px;
+  width: 100%;
+  height: 160px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
 }
-.loading-spinner__content__text__item--food {
-  left: 126px;
-  color: #99E2D0;
-  animation-delay: 1s;
+.restaurant-card__name {
+  margin: 10px 0 0 10px;
+  font-weight: 600;
 }
-@media screen and (min-width: 1025px) {
-  .loading-spinner__content {
-    max-width: 1280px;
-  }
+.restaurant-card__place {
+  margin: 5px 0 0 10px;
+}
+.restaurant-card__new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: max-content;
+  padding: 6px 12px;
+  border-radius: 3px;
+  background-color: #9EE2CE;
+  color: #3E9C7D;
+  font-size: 14px;
+  font-weight: 500;
+  display: none;
+}
+.restaurant-card--new .restaurants__card__new {
+  display: unset;
 }
 
 header {
@@ -278,64 +336,6 @@ header a {
     justify-content: space-around;
     align-content: space-around;
   }
-}
-
-.restaurants__card {
-  position: relative;
-  padding-bottom: 20px;
-  border-radius: 20px;
-  box-shadow: 0 8px 8px #d6d6d6;
-  transition: box-shadow 0.5s;
-}
-.restaurants__card:hover {
-  box-shadow: 0 12px 12px #bdbdbd;
-}
-.restaurants__card__like {
-  position: absolute;
-  right: 20px;
-  bottom: 30px;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  background-clip: text;
-  text-shadow: -1px 0 #ababab, 0 1px #ababab, 1px 0 #ababab, 0 -1px #ababab;
-  font-size: 28px;
-  color: #F7F7F7;
-  transition: color 1s, text-shadow 0.1s;
-}
-.restaurants__card__like:hover {
-  cursor: pointer;
-  text-shadow: 0 0 transparent;
-  color: transparent;
-}
-.restaurants__card__img {
-  top: -10px;
-  width: 100%;
-  height: 160px;
-  border-radius: 20px 20px 0 0;
-  object-fit: cover;
-}
-.restaurants__card__name {
-  margin: 10px 0 0 10px;
-  font-weight: 600;
-}
-.restaurants__card__place {
-  margin: 5px 0 0 10px;
-}
-.restaurants__card__new {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: max-content;
-  padding: 6px 12px;
-  border-radius: 3px;
-  background-color: #9EE2CE;
-  color: #3E9C7D;
-  font-size: 14px;
-  font-weight: 500;
-  display: none;
-}
-.restaurants__card--new .restaurants__card__new {
-  display: unset;
 }
 
 .menu {
