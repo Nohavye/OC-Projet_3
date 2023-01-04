@@ -18,8 +18,13 @@
         border-radius: 40px 40px 0 0;
         padding: 40px 20px 0 20px;
 
+        @include mobile-mode {
+            @include icon-like(45px, 40px, 0, 0);
+        }
+
         @include tablet-only-mode {
-            padding: 40px 20vw 0 20vw;
+            padding: 40px 16% 0 16%;
+            @include icon-like(45px, 18%, 0, 0);
         }
 
         @include desktop-mode {
@@ -27,6 +32,7 @@
             grid-template-columns: 31% 31% 31%;
             justify-content: space-around;
             align-content: space-around;
+            @include icon-like(45px, 40px, 0, 0);
         }
 
         &__title {
@@ -39,8 +45,6 @@
                 grid-column: 1 / 4;
             }
         }
-
-        @include icon-like(45px, 40px, 0, 0);
         
         &__category {
             margin-bottom: 40px;
@@ -109,7 +113,7 @@
                     transition: transform 0.5s, opacity 0.5s;
                 }
 
-                transition: border-right 0.5s;
+                transition: border-right 0.5s, box-shadow 0.5s;
                 border-color: #9EE2CE;
 
                 &:hover {

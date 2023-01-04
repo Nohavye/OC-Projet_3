@@ -1,5 +1,9 @@
 @mixin shadow-element {
     box-shadow: 0 8px 8px darken($background-color-primary, 16%);
+    transition: box-shadow 0.5s;
+    &:hover {
+        box-shadow: 0 12px 12px darken($background-color-primary, 26%);
+    }
 }
 
 @mixin text-16-500($color: $text-color) {
@@ -26,7 +30,7 @@
         @include text-16-500(invert($text-color));
         @content;
 
-        transition: opacity 0.5s;
+        transition: opacity 0.5s, box-shadow 0.5s;
 
         &:hover {
             opacity: 0.8;
@@ -77,6 +81,12 @@
 
 @mixin tablet-only-mode {
     @media screen and (min-width: (map-get($breakpoints, mobile)+1px)) and (max-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin mobile-mode {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
         @content;
     }
 }

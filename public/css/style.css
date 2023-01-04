@@ -166,11 +166,15 @@ footer a {
   border-radius: 30px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 0 8px 8px #d6d6d6;
+  transition: box-shadow 0.5s;
   color: white;
   font-size: 16px;
   font-weight: 500;
   margin-top: 10px;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s, box-shadow 0.5s;
+}
+.catch__button:hover {
+  box-shadow: 0 12px 12px #bdbdbd;
 }
 .catch__button:hover {
   opacity: 0.8;
@@ -210,9 +214,13 @@ footer a {
   border-radius: 20px;
   background-color: #F7F7F7;
   box-shadow: 0 8px 8px #d6d6d6;
+  transition: box-shadow 0.5s;
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.manual__button:hover {
+  box-shadow: 0 12px 12px #bdbdbd;
 }
 @media screen and (min-width: 513px) {
   .manual__button {
@@ -266,6 +274,10 @@ footer a {
   padding-bottom: 20px;
   border-radius: 20px;
   box-shadow: 0 8px 8px #d6d6d6;
+  transition: box-shadow 0.5s;
+}
+.restaurants__card:hover {
+  box-shadow: 0 12px 12px #bdbdbd;
 }
 .restaurants__card__img {
   top: -10px;
@@ -341,9 +353,45 @@ footer a {
   border-radius: 40px 40px 0 0;
   padding: 40px 20px 0 20px;
 }
+@media screen and (max-width: 512px) {
+  .bloc-menu-ahead__like {
+    position: absolute;
+    top: 45px;
+    right: 40px;
+    font-size: 28px;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: -1px 0 #ababab, 0 1px #ababab, 1px 0 #ababab, 0 -1px #ababab;
+    color: #F7F7F7;
+    transition: color 1s, text-shadow 0.1s;
+  }
+  .bloc-menu-ahead__like:hover {
+    cursor: pointer;
+    text-shadow: 0 0 transparent;
+    color: transparent;
+  }
+}
 @media screen and (min-width: 513px) and (max-width: 1024px) {
   .bloc-menu-ahead {
-    padding: 40px 20vw 0 20vw;
+    padding: 40px 16% 0 16%;
+  }
+  .bloc-menu-ahead__like {
+    position: absolute;
+    top: 45px;
+    right: 18%;
+    font-size: 28px;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: -1px 0 #ababab, 0 1px #ababab, 1px 0 #ababab, 0 -1px #ababab;
+    color: #F7F7F7;
+    transition: color 1s, text-shadow 0.1s;
+  }
+  .bloc-menu-ahead__like:hover {
+    cursor: pointer;
+    text-shadow: 0 0 transparent;
+    color: transparent;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -352,6 +400,23 @@ footer a {
     grid-template-columns: 31% 31% 31%;
     justify-content: space-around;
     align-content: space-around;
+  }
+  .bloc-menu-ahead__like {
+    position: absolute;
+    top: 45px;
+    right: 40px;
+    font-size: 28px;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: -1px 0 #ababab, 0 1px #ababab, 1px 0 #ababab, 0 -1px #ababab;
+    color: #F7F7F7;
+    transition: color 1s, text-shadow 0.1s;
+  }
+  .bloc-menu-ahead__like:hover {
+    cursor: pointer;
+    text-shadow: 0 0 transparent;
+    color: transparent;
   }
 }
 .bloc-menu-ahead__title {
@@ -364,23 +429,6 @@ footer a {
   .bloc-menu-ahead__title {
     grid-column: 1/4;
   }
-}
-.bloc-menu-ahead__like {
-  position: absolute;
-  top: 45px;
-  right: 40px;
-  font-size: 28px;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  background-clip: text;
-  text-shadow: -1px 0 #ababab, 0 1px #ababab, 1px 0 #ababab, 0 -1px #ababab;
-  color: #F7F7F7;
-  transition: color 1s, text-shadow 0.1s;
-}
-.bloc-menu-ahead__like:hover {
-  cursor: pointer;
-  text-shadow: 0 0 transparent;
-  color: transparent;
 }
 .bloc-menu-ahead__category {
   margin-bottom: 40px;
@@ -397,13 +445,17 @@ footer a {
   position: relative;
   background-color: #FFFFFF;
   box-shadow: 0 8px 8px #d6d6d6;
+  transition: box-shadow 0.5s;
   margin-top: 15px;
   padding: 10px 20px 10px 10px;
   border-radius: 15px;
   animation: product-appear 0.3s;
   animation-fill-mode: both;
-  transition: border-right 0.5s;
+  transition: border-right 0.5s, box-shadow 0.5s;
   border-color: #9EE2CE;
+}
+.bloc-menu-ahead__category__product:hover {
+  box-shadow: 0 12px 12px #bdbdbd;
 }
 .bloc-menu-ahead__category__product:nth-child(2) {
   animation-delay: 0.15s;
@@ -467,6 +519,7 @@ footer a {
   border-radius: 30px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 0 8px 8px #d6d6d6;
+  transition: box-shadow 0.5s;
   color: white;
   font-size: 16px;
   font-weight: 500;
@@ -475,7 +528,10 @@ footer a {
   width: 40%;
   min-width: max-content;
   text-align: center;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s, box-shadow 0.5s;
+}
+.bloc-menu-ahead__button:hover {
+  box-shadow: 0 12px 12px #bdbdbd;
 }
 @media screen and (min-width: 1025px) {
   .bloc-menu-ahead__button {
