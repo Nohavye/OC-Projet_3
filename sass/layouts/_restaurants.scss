@@ -1,4 +1,4 @@
-.bloc-restaurants {
+.restaurants {
     padding: 50px 20px;
     background-color: $background-color-secondary;
 
@@ -55,7 +55,7 @@
         }
 
         &--new {
-            .bloc-restaurants__card__new {
+            .restaurants__card__new {
                 display: unset;
             }
         }
