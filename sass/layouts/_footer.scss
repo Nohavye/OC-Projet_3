@@ -6,8 +6,7 @@ footer {
 
     // Texts
     color: invert($text-color);
-    font-size: 15px;
-    font-weight: 400;
+    @include text-footer;
 
     //Display
     display: flex;
@@ -21,8 +20,7 @@ footer {
         margin-bottom: 10px;
 
         // Texts
-        font-family: Shrikhand;
-        font-size: large;
+        @include text-footer-title;
 
         // Responsive
         @include tablet-mode {

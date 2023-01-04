@@ -77,6 +77,11 @@
     font-weight: 600;
 }
 
+@mixin text-menu-title {
+    font-family: Shrikhand;
+    font-size: x-large;
+}
+
 @mixin text-category-title {
     font-size: 16px;
     font-weight: 300;
@@ -86,6 +91,26 @@
 @mixin text-product-title {
     font-size: 18px;
     font-weight: 500;
+}
+
+@mixin text-footer-title {
+    font-family: Shrikhand;
+    font-size: large;
+}
+
+@mixin text-product {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+@mixin text-product-price {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@mixin text-footer {
+    font-size: 15px;
+    font-weight: 400;
 }
 
 // Responsive mixins

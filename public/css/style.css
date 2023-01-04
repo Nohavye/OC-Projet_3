@@ -265,14 +265,15 @@ a {
 }
 .product-card__text {
   font-size: 15px;
+  font-weight: 300;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .product-card__price {
-  text-align: right;
-  font-weight: 500;
   font-size: 15px;
+  font-weight: 500;
+  text-align: right;
 }
 .product-card__check {
   position: absolute;
