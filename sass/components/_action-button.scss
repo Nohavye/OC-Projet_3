@@ -1,0 +1,21 @@
+.action-button {
+
+    //Globals
+    padding: 15px 25px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+        
+    @include shadow-element;
+
+    // Texts
+    text-align: center;
+    @include text-16-500(invert($text-color));
+
+    // Animations
+    transition: opacity 0.5s, box-shadow 0.5s;
+
+    // Actions
+    &:hover {
+        opacity: 0.8;
+    }
+}

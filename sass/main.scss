@@ -6,10 +6,18 @@
 // Base
 @import "./base/base";
 
+// Components
+@import "./components/action-button";
+@import "./components/location";
+@import "./components/spinner";
+
 // Layouts
 @import "./layouts/header";
+@import "./layouts/catch";
+@import "./layouts/manual";
+@import "./layouts/restaurants";
+@import "./layouts/menu";
 @import "./layouts/footer";
 
 // Pages
 @import "./pages/index";
-@import "./pages/page";

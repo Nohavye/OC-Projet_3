@@ -33,33 +33,6 @@
     }
 }
 
-@mixin action-button {
-
-    // Elements
-    &__button {
-
-        //Globals
-        padding: 15px 25px;
-        border-radius: 30px;
-        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-            
-        @include shadow-element;
-
-        // Texts
-        @include text-16-500(invert($text-color));
-
-        @content;
-
-        // Animations
-        transition: opacity 0.5s, box-shadow 0.5s;
-
-        // Actions
-        &:hover {
-            opacity: 0.8;
-        }
-    }
-}
-
 @mixin icon-like($top: 0, $right: 0, $bottom: 0, $left: 0) {
 
     // Elements

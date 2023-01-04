@@ -62,15 +62,12 @@
             }
         }
 
-        @include action-button {
+        &__button {
 
             // Globals
             width: 40%;
             min-width: max-content;
             margin: auto;
-
-            // Texts
-            text-align: center;
 
             // Display
             display: block;
