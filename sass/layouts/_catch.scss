@@ -13,22 +13,31 @@
 
     // Elements
     @include title-element {
+
+        // Texts
         text-align: center;
     }
 
     &__text {
-        //width: 90%;
+        
+        // Texts
         text-align: center;
     }
 
     @include action-button {
+
+        // Globals
         margin-top: 10px;
     }
 
     // Responsive
     @include desktop-mode {
-        order: 2;
+
+        // Globals
         width: 50%;
         background-color: $background-color-primary;
+
+        // Display
+        order: 2;
     }
 }

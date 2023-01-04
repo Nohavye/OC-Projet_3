@@ -11,136 +11,202 @@
     }
     
     &-ahead {
+
+        // Globals
         position: relative;
         top: -40px;
-
-        box-sizing: border-box;
         width: 100%;
-
-        background-color: $background-color-secondary;
-        border-radius: 40px 40px 0 0;
         padding: 40px 20px 0 20px;
+        border-radius: 40px 40px 0 0;
+        background-color: $background-color-secondary;
 
-        @include mobile-mode {
-            @include icon-like(45px, 40px, 0, 0);
-        }
-
-        @include tablet-only-mode {
-            padding: 40px 16% 0 16%;
-            @include icon-like(45px, 18%, 0, 0);
-        }
-
-        @include desktop-mode {
-            display: grid;
-            grid-template-columns: 31% 31% 31%;
-            justify-content: space-around;
-            align-content: space-around;
-            @include icon-like(45px, 40px, 0, 0);
-        }
-
+        // Display
+        box-sizing: border-box;
+        
+        // Elements
         &__title {
+
+            // Globals
             width: 75%;
             margin-bottom: 30px;
+
+            // Texts
             font-family: Shrikhand;
             font-size: x-large;
 
+            // Responsive
             @include desktop-mode {
+
+                // Display
                 grid-column: 1 / 4;
             }
         }
         
         &__category {
+
+            // Globals
             margin-bottom: 40px;
     
+            // Elements
             &__title {
-                text-transform: uppercase;
-                font-weight: 300;
-                font-size: 16px;
-            
+
+                // Globals
                 width: 40px;
                 padding-bottom: 5px;
                 border-bottom: 3px solid #9EE2CE;
-            }
-    
-            &__product {
-                position: relative;
-                background-color: $background-color-primary;
-                @include shadow-element;
-                margin-top: 15px;
-                padding: 10px 20px 10px 10px;
-                border-radius: 15px;
 
-                @for $i from 2 through 7 {
-                    &:nth-child(#{$i}) {
-                        animation-delay: 0.15s * ($i - 1);
-                    }
-                }
-
-                animation: product-appear 0.3s;
-                animation-fill-mode: both;
-    
-                div {
-                    display: grid;
-                    grid: auto-flow / 85% 15%;
-                }
-    
-                &__title {
-                    margin-bottom: 5px;
-                    font-weight: 500;
-                    font-size: 18px;
-
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-    
-                &__text {
-                    font-size: 15px;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-    
-                &__price {
-                    text-align: right;
-                    font-weight: 500;
-                    font-size: 15px;
-                }
-
-                &__check {
-                    position: absolute;
-                    top: 25px;
-                    right: -38px;
-                    color: transparent;
-                    opacity: 0;
-                    transition: transform 0.5s, opacity 0.5s;
-                }
-
-                transition: border-right 0.5s, box-shadow 0.5s;
-                border-color: #9EE2CE;
-
-                &:hover {
-                    border-right: 60px solid #9EE2CE;
-                }
-
-                &:hover > &__check {
-                    color: white;
-                    opacity: 1;
-                    transform: rotate(-360deg);
-                }
+                // Texts
+                text-transform: uppercase;
+                font-weight: 300;
+                font-size: 16px;
             }
         }
 
         @include action-button {
-            display: block;
-            margin: auto;
+
+            // Globals
             width: 40%;
             min-width: max-content;
+            margin: auto;
+
+            // Texts
             text-align: center;
 
+            // Display
+            display: block;
+
+            // Responsive
             @include desktop-mode {
+
+                // Display
                 grid-column: 2 / 3;
             }
         }
+
+        // Responsive
+        @include mobile-mode {
+
+            // Elements
+            @include icon-like(45px, 40px, 0, 0);
+        }
+
+        @include tablet-only-mode {
+
+            // Globals
+            padding: 40px 16% 0 16%;
+
+            // Elements
+            @include icon-like(45px, 18%, 0, 0);
+        }
+
+        @include desktop-mode {
+
+            // Display
+            display: grid;
+            grid-template-columns: 31% 31% 31%;
+            justify-content: space-around;
+            align-content: space-around;
+
+            // Elements
+            @include icon-like(45px, 40px, 0, 0);
+        }
+    }
+}
+
+.menu-ahead__category__product {
+
+    // Globals
+    position: relative;
+    margin-top: 15px;
+    padding: 10px 20px 10px 10px;
+    border-radius: 15px;
+    border-color: #9EE2CE;
+    background-color: $background-color-primary;
+
+    @include shadow-element;
+
+    // Animation
+    transition: border-right 0.5s, box-shadow 0.5s;
+    animation: product-appear 0.3s;
+    animation-fill-mode: both;
+
+    @for $i from 2 through 7 {
+        &:nth-child(#{$i}) {
+            animation-delay: 0.15s * ($i - 1);
+        }
+    }
+
+    // Elements
+    div {
+
+        // Display
+        display: grid;
+        grid: auto-flow / 85% 15%;
+    }
+
+    &__title {
+
+        // Globals
+        margin-bottom: 5px;
+
+        // Texts
+        font-weight: 500;
+        font-size: 18px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__text {
+
+        // Texts
+        font-size: 15px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__price {
+
+        // Texts
+        text-align: right;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    &__check {
+
+        // Globals
+        position: absolute;
+        top: 25px;
+        right: -38px;
+
+        // Color
+        color: transparent;
+        opacity: 0;
+
+        // Animation
+        transition: transform 0.5s, opacity 0.5s;
+    }
+
+    // Actions
+    &:hover {
+
+        // Globals
+        border-right: 60px solid #9EE2CE;
+    }
+
+    &:hover > &__check {
+
+        //Globals
+        opacity: 1;
+
+        // Color
+        color: white;
+
+        // Transforms
+        transform: rotate(-360deg);
     }
 }

@@ -11,14 +11,20 @@ header {
     
     // Elements
     img {
+
+        // Globals
         width: 150px;
         height: auto;
     }
     
     a {
+
+        // Globals
         position: absolute;
         left: 20px;
-        font-size: larger;
+
+        // Texts
         color: lighten($text-color, 30%);
+        font-size: larger;
     }
 }
