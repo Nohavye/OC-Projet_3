@@ -1,0 +1,24 @@
+// Responsive mixins
+@mixin desktop-mode {
+    @media screen and (min-width: (map-get($breakpoints, tablet)+1px)) {
+        @content;
+    }
+}
+
+@mixin tablet-mode {
+    @media screen and (min-width: (map-get($breakpoints, mobile)+1px)) {
+        @content;
+    }
+}
+
+@mixin tablet-only-mode {
+    @media screen and (min-width: (map-get($breakpoints, mobile)+1px)) and (max-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin mobile-mode {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}

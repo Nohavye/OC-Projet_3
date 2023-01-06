@@ -1,0 +1,64 @@
+// Texts mixins
+@mixin text-base {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+@mixin text-label($color: $text-color) {
+    color: $color;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@mixin text-button($color: $text-color) {
+    color: $color;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@mixin text-section-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@mixin text-retaurant-card-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@mixin text-menu-title {
+    font-family: Shrikhand;
+    font-size: x-large;
+}
+
+@mixin text-category-title {
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+@mixin text-product-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@mixin text-footer-title {
+    font-family: Shrikhand;
+    font-size: large;
+}
+
+@mixin text-product {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+@mixin text-product-price {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@mixin text-footer {
+    font-size: 15px;
+    font-weight: 400;
+}
