@@ -6,6 +6,7 @@
     border-radius: 15px;
     border-color: #9EE2CE;
     background-color: $background-color-primary;
+    border-right: 0px solid #9EE2CE;
 
     @include shadow-element;
 
@@ -60,9 +61,6 @@
         // Color
         color: transparent;
         opacity: 0;
-
-        // Animation
-        transition: transform 0.5s, opacity 0.5s;
     }
 
     // Actions
@@ -82,5 +80,6 @@
 
         // Transforms
         transform: rotate(-360deg);
+        transition: transform 0.5s, opacity 0.5s;
     }
 }

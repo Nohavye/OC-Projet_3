@@ -244,6 +244,7 @@ a {
   border-radius: 15px;
   border-color: #9EE2CE;
   background-color: #FFFFFF;
+  border-right: 0px solid #9EE2CE;
   box-shadow: 0 8px 8px #d6d6d6;
   transition: box-shadow 0.5s;
   transition: border-right 0.5s, box-shadow 0.5s;
@@ -281,7 +282,6 @@ a {
   right: -38px;
   color: transparent;
   opacity: 0;
-  transition: transform 0.5s, opacity 0.5s;
 }
 .product-card:hover {
   border-right: 60px solid #9EE2CE;
@@ -290,6 +290,7 @@ a {
   opacity: 1;
   color: white;
   transform: rotate(-360deg);
+  transition: transform 0.5s, opacity 0.5s;
 }
 
 header {
